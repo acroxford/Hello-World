@@ -2,9 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+	<script>
+		function tellFortune(){
+			document.getElementById("text").innerHTML = "New text!";
+		}
+	</script>
+    <title>Fortune Teller</title>
   </head>
   <body>
-  test
+  <p id="text"> Click the Button Below to see your fortune</p>
+  <button type="button" onclick="tellFortune()">What's my Fortune?</button>
   </body>
 </html>
